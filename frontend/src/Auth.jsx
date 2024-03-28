@@ -6,13 +6,13 @@ function Auth() {
   return (
     <div>
       <div className="Auth-body">
-      <h1>Choose what you are for here?</h1>
-      <div id="links">
+        <h1>Choose what you are for here?</h1>
+        <div id="links">
           <Link to="/hire" className="nav-item">
-            <button>Hire</button>
+            <button className="auth-button">Hire</button>
           </Link>
           <Link to="/jobsearch" className="nav-item">
-            <button>Job Search</button>
+            <button className="auth-button">Job Search</button>
           </Link>
         </div>
       </div>
