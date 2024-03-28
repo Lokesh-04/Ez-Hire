@@ -1,12 +1,21 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Auth from "./Auth";
+import Jobsearch from "./Jobsearch";
+import Hire from "./Hire";
 
 function App() {
-
   return (
-    <>
-    <h1>Hello Vite + React!</h1>
-    </>
-  )
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Auth />} />
+          <Route path="/hire" element={<Hire />} />
+          <Route path="/jobsearch" element={<Jobsearch />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
