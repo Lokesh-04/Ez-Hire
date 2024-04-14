@@ -1,12 +1,16 @@
 import React from "react";
-import Jobs from "../components/Jobs";
-import SideBar from "../components/SideBar";
+import Jobs from "../components/Jobs/Jobs";
+import Job from "../components/Job/Job";
+import SideBar from "../components/SideBar/SideBar";
+import "./Hire.css";
 
 function Hire() {
   return (
     <div>
-      <Jobs />
-      <SideBar />
+      <div id="main">
+        <Jobs />
+        <SideBar />
+      </div>
     </div>
   );
 }
